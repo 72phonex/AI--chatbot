@@ -9,7 +9,7 @@ conversation_history = []
 
 def chat_groq(messages):
     response = client.chat.completions.create(
-       model="llama-3.3-70b-versatile",,
+       model="llama-3.3-70b-versatile",
         messages=[
             {"role": "system", "content": "You are a helpful personal assistant."},
             *messages
