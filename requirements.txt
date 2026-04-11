@@ -2,3 +2,6 @@ flask
 groq
 requests
 gunicorn
+supabase
+python_docx
+Pillow
