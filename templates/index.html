@@ -267,6 +267,8 @@
         }
         typing.remove();
         addMessage(reply, 'bot');
+        const msgs = document.getElementById('messages');
+        msgs.scrolTop =msgs.scrollHeight;
       } catch(e) {
         typing.remove();
         addMessage('Something went wrong. Try again.', 'bot');
@@ -299,7 +301,7 @@
       wrapper.appendChild(avatar);
       wrapper.appendChild(content);
       document.getElementById('messages').appendChild(wrapper);
-      wrapper.scrollIntoView({ behavior:'smooth' });
+      wrapper.scrollIntoView({ behavior:'smooth',block:'end' });
       return wrapper;
     }
 
